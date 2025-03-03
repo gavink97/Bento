@@ -11,8 +11,8 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'Rei',
-	imageBackground: false,
+	name: 'Gavin',
+	imageBackground: true,
 	openInNewTab: true,
 	twelveHourFormat: false,
 
@@ -23,7 +23,7 @@ const CONFIG = {
 	greetingNight: 'Go to Sleep!',
 
 	// Layout
-	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+	bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
 
 	// Weather
 	weatherKey: '288752458e9b0130f398aa44af330a02', // Write here your API Key
@@ -31,12 +31,12 @@ const CONFIG = {
 	weatherUnit: 'C', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
-	trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
-	defaultLatitude: '34.049',
-	defaultLongitude: '74.392',
+	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
+	defaultLatitude: '',
+	defaultLongitude: '',
 
 	// Autochange
-	autoChangeTheme: false,
+	autoChangeTheme: true,
 
 	// Autochange by OS
 	changeThemeByOS: true,
@@ -53,66 +53,66 @@ const CONFIG = {
 	firstButtonsContainer: [
 		{
 			id: '1',
+			name: 'Mail',
+			icon: 'inbox',
+			link: 'https://gmail.com/',
+		},
+		{
+			id: '2',
+			name: 'Calendar',
+			icon: 'calendar-range',
+			link: 'https://www.icloud.com/calendar/',
+		},
+		{
+			id: '3',
+			name: 'Notes',
+			icon: 'notepad-text',
+			link: 'https://www.icloud.com/notes/',
+		},
+		{
+			id: '4',
 			name: 'Github',
 			icon: 'github',
 			link: 'https://github.com/',
 		},
 		{
-			id: '2',
-			name: 'Mail',
-			icon: 'mail',
-			link: 'https://gmail.com/',
-		},
-		{
-			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
-		},
-		{
-			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
-		},
-		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
-		},
-		{
-			id: '6',
 			name: 'Youtube',
 			icon: 'youtube',
 			link: 'https://youtube.com/',
+		},
+		{
+			id: '6',
+			name: 'Localhost',
+			icon: 'code-xml',
+			link: 'http://localhost:3000',
 		},
 	],
 
 	secondButtonsContainer: [
 		{
 			id: '1',
-			name: 'Music',
+			name: 'Spotify',
 			icon: 'headphones',
 			link: 'https://open.spotify.com',
 		},
 		{
 			id: '2',
-			name: 'twitter',
-			icon: 'twitter',
-			link: 'https://twitter.com/',
-		},
-		{
-			id: '3',
-			name: 'bot',
-			icon: 'bot',
+			name: 'Discord',
+			icon: 'message-circle-more',
 			link: 'https://discord.com/app',
 		},
 		{
+			id: '3',
+			name: 'Deepseek',
+			icon: 'bot',
+			link: 'https://chat.deepseek.com/',
+		},
+		{
 			id: '4',
-			name: 'Amazon',
-			icon: 'shopping-bag',
-			link: 'https://amazon.com/',
+			name: 'Lichess',
+			icon: 'swords',
+			link: 'https://lichess.org/',
 		},
 		{
 			id: '5',
@@ -122,9 +122,9 @@ const CONFIG = {
 		},
 		{
 			id: '6',
-			name: 'Figma',
+			name: 'Penpot',
 			icon: 'figma',
-			link: 'https://figma.com/',
+			link: 'https://design.penpot.app',
 		},
 	],
 
